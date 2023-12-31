@@ -1,0 +1,24 @@
+  
+.logo{
+    width: 2.5rem;
+    height: 2.5rem;
+    border-radius: 50%;
+    margin: 0.5rem 2rem 0.5rem 0rem;
+  }
+
+  @media (max-width: 768px) {
+    .logo{
+        display: none;
+    }
+    .navigationbar{
+        padding: 1rem;
+      }
+  }
+  @media (min-width: 1400px){
+    .navigationbar {
+        max-width: 95% !important;
+    }
+  }
+
+
+  
