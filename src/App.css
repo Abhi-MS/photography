@@ -1,31 +1,29 @@
-/* App.css */
-
-/* Global styles */
 body {
   font-family: Arial, sans-serif;
   margin: 0;
   padding: 0;
+  background-color: black;
+  overflow-x: hidden; 
 }
 
-/* Main content styles */
-main {
-  padding: 20px;
+Header{
+  z-index: 1000;
+  background-color: transparent;
 }
 
-/* Full height sections */
 section {
-  height: 100vh; /* Set section height to 100% of viewport height */
+  min-height: 100vh;
   display: flex;
   justify-content: center;
   align-items: center;
+  background-color: #0F0F0F;
+  overflow: hidden;
 }
 
-/* About section styles */
 .about-container {
   text-align: center;
 }
 
-/* Projects section styles */
 .projects-container {
   text-align: center;
 }
@@ -42,7 +40,6 @@ section {
   margin-top: 0;
 }
 
-/* Contact section styles */
 .contact-container {
   text-align: center;
 }
@@ -54,4 +51,13 @@ section {
 
 .contact-container ul li {
   margin-bottom: 10px;
+}
+
+footer p{
+  background-color: #0F0F0F;
+  color: #f9f9f9;
+}
+html{
+  background-color: #0F0F0F;
+
 }

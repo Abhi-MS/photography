@@ -1,4 +1,5 @@
 import React from 'react';
+import '../styles/Contact.css';
 
 const Contact = () => {
   return (
@@ -6,7 +7,7 @@ const Contact = () => {
       <div className="contact-container">
         <h2>Contact Me</h2>
         <p>
-          Feel free to reach out to me through the following channels:
+          Let's talk
         </p>
         <ul>
           <li>Email: my.email@example.com</li>

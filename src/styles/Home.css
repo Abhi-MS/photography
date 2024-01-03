@@ -1,0 +1,14 @@
+
+.slides{
+    margin: 0px;
+    padding: 0px;
+    height: 100vh;
+}
+.hidebuttons{
+    opacity: 30% !important;
+}
+
+.carousel-item {
+  transition-duration: 1.5s; 
+  transition-timing-function: ease-in-out;
+}
