@@ -12,3 +12,14 @@
   transition-duration: 1.5s; 
   transition-timing-function: ease-in-out;
 }
+
+@media (max-width: 768px) {
+  .hidebuttons{
+    opacity: 0 !important;
+}
+.slides{
+  margin: 0px;
+  padding: 0px;
+  height: 100vh;
+}
+}

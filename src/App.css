@@ -61,3 +61,8 @@ html{
   background-color: #0F0F0F;
 
 }
+@media (max-width: 768px) {
+section{
+  min-height: fit-content;
+}
+}
