@@ -1,21 +1,21 @@
 {
   "files": {
-    "main.css": "/static/css/main.9139f3c6.css",
-    "main.js": "/static/js/main.b2ecbe82.js",
-    "static/js/787.7a378f1c.chunk.js": "/static/js/787.7a378f1c.chunk.js",
-    "static/media/img1.jpg": "/static/media/img1.8511f8108c33833ee037.jpg",
-    "static/media/img2.jpg": "/static/media/img2.7f523f0df30aaeacf4ff.jpg",
-    "static/media/img3.jpg": "/static/media/img3.87be3001aa23d4cb15f1.jpg",
-    "static/media/img6.jpg": "/static/media/img6.9d88228d00cc84d0a0df.jpg",
-    "static/media/img4.jpg": "/static/media/img4.b5f6e51a00a949911ee9.jpg",
-    "static/media/img5.jpg": "/static/media/img5.372bb6d9c4a4d559dfda.jpg",
-    "index.html": "/index.html",
-    "main.9139f3c6.css.map": "/static/css/main.9139f3c6.css.map",
-    "main.b2ecbe82.js.map": "/static/js/main.b2ecbe82.js.map",
-    "787.7a378f1c.chunk.js.map": "/static/js/787.7a378f1c.chunk.js.map"
+    "main.css": "/photography/static/css/main.9139f3c6.css",
+    "main.js": "/photography/static/js/main.b345d36f.js",
+    "static/js/787.7a378f1c.chunk.js": "/photography/static/js/787.7a378f1c.chunk.js",
+    "static/media/img1.jpg": "/photography/static/media/img1.8511f8108c33833ee037.jpg",
+    "static/media/img2.jpg": "/photography/static/media/img2.7f523f0df30aaeacf4ff.jpg",
+    "static/media/img3.jpg": "/photography/static/media/img3.87be3001aa23d4cb15f1.jpg",
+    "static/media/img6.jpg": "/photography/static/media/img6.9d88228d00cc84d0a0df.jpg",
+    "static/media/img4.jpg": "/photography/static/media/img4.b5f6e51a00a949911ee9.jpg",
+    "static/media/img5.jpg": "/photography/static/media/img5.372bb6d9c4a4d559dfda.jpg",
+    "index.html": "/photography/index.html",
+    "main.9139f3c6.css.map": "/photography/static/css/main.9139f3c6.css.map",
+    "main.b345d36f.js.map": "/photography/static/js/main.b345d36f.js.map",
+    "787.7a378f1c.chunk.js.map": "/photography/static/js/787.7a378f1c.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.9139f3c6.css",
-    "static/js/main.b2ecbe82.js"
+    "static/js/main.b345d36f.js"
   ]
 }
