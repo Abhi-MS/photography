@@ -40,7 +40,7 @@ const Home = () => {
       <img src={IMG8} className="d-block img-fluid" alt="8 of slideshow"/>
     </div>
     <div className="carousel-item">
-      <img src={IMG9} className="d-block w-100" alt="9 of slideshow"/>
+      <img src={IMG9} className="d-block img-fluid" alt="9 of slideshow"/>
     </div>
   </div>
   <button className="carousel-control-prev hidebuttons" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="prev">
