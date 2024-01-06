@@ -15,8 +15,8 @@ import IMG9 from '../assets/img9.jpg';
 const Projects = () => {
   return (
     <section id="projects">
-    <div className='galleryContainer'>
-    <div className='textContainer'>
+    <div className='gallery-container'>
+    <div className='text-container'>
     <h2>Work</h2>
     </div>
     

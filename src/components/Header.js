@@ -12,7 +12,7 @@ function Header() {
         <Navbar.Brand href="#home">ABHI MURALI </Navbar.Brand>
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">
-          <Nav className="ms-auto">
+          <Nav className="ms-auto nav-links">
             <Nav.Link href="#projects">Work</Nav.Link>
             <Nav.Link href="#contact">Contact</Nav.Link>
             
@@ -24,7 +24,7 @@ function Header() {
       </Container>
     </Navbar>
     </header>
-    
+                                        
   );
 }
 

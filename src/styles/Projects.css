@@ -1,4 +1,4 @@
-.galleryContainer {
+.gallery-container {
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -8,7 +8,8 @@
   
   .text-container {
     flex: 1;
-    justify-self: flex-start;
+    justify-self: center;
+    margin-left: 3rem;
   }
    
   #projects h2{
@@ -52,8 +53,8 @@
     height: calc(var(--s)*var(--f));
   }
   
-  @media (max-width: 768px) {
-    .galleryContainer {
+  @media screen and (max-width: 768px) {
+    .gallery-container {
       display: flex;
       flex-direction: column;
       align-items: center;
@@ -73,11 +74,9 @@
     .gallery img:hover{
       width:  100%;
     }
-
-    @media (max-width: 768px) {
-      #projects{
-          height: 100vh;
-          align-items: center;
-      }
-    }
+    #projects{
+      height: 100vh;
+      align-items: center;
+  }
+  
   }
