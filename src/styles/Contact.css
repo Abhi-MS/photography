@@ -1,9 +1,0 @@
-.contact-container{
-    color: rgb(219, 227, 219);
-}
-
-@media (max-width: 768px) {
-    #contact{
-        height: 100vh;
-    }
-  }
