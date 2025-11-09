@@ -9,7 +9,7 @@ const Projects = () => {
     <section id="projects">
     <div className='gallery-container'>
     <div className='text-container'>
-    <h2>Work</h2>
+    <h2>Gallery</h2>
     </div>
     
       <div className="gallery">

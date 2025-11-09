@@ -1,9 +1,10 @@
 .gallery-container {
     display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: space-between;
     width: 100%;
-    padding-left: 4rem;
+    padding: 4rem;
   }
   
   .text-container {
@@ -32,8 +33,6 @@
     max-width: 50%;
     grid-template-columns: repeat(3,auto);
     margin: 3rem;
-    margin-right: 1rem;
-    margin-left: auto;
   }
   
   .gallery > img {
