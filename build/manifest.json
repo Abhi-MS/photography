@@ -1,6 +1,7 @@
 {
-  "short_name": "React App",
-  "name": "Create React App Sample",
+  "short_name": "Abhi Photography",
+  "name": "Abhi Murali Photography - Nature & Wildlife Portfolio",
+  "description": "Professional nature and wildlife photography portfolio showcasing stunning landscapes, waterfalls, animals, and outdoor photography by Abhi Murali",
   "icons": [
     {
       "src": "favicon.ico",
