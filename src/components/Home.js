@@ -9,7 +9,12 @@ const Home = () => {
   <div className="carousel-inner slides">
     {GALLERY_IMAGES.map((image, index) => (
       <div key={image.id} className={`carousel-item ${index === 0 ? 'active' : ''}`}>
-        <img src={image.src} className="d-block img-size" alt={image.alt}/>
+        <img 
+          src={image.src} 
+          className="d-block img-size" 
+          alt={image.alt}
+          loading={index === 0 ? "eager" : "lazy"}
+        />
       </div>
     ))}
   </div>
