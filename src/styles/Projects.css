@@ -42,12 +42,12 @@
     min-width: 100%;
     object-fit: cover;
     cursor: pointer;
-    filter: grayscale(80%);
+    filter: grayscale(80%) blur(0.5px) brightness(0.85);
     transition: .35s linear;
   }
   
   .gallery img:hover{
-    filter: grayscale(0);
+    filter: grayscale(0) blur(0px) brightness(1);
     width:  calc(var(--s)*var(--f));
     height: calc(var(--s)*var(--f));
   }
