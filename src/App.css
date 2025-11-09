@@ -8,7 +8,10 @@ body {
   margin: 0;
   padding: 0;
   background-color: black;
-  overflow-x: hidden; 
+  overflow-x: hidden;
+  /* Optimize scrolling performance */
+  -webkit-overflow-scrolling: touch;
+  overscroll-behavior: contain;
 }
 
 Header{
