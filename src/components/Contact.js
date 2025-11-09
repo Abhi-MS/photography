@@ -10,8 +10,8 @@ const Contact = () => {
           Let's talk
         </p>
         <ul>
-          <li>Email: my.email@example.com</li>
-          <li>Phone: +1234567890</li>
+          <li>Email: abhimsrami@gmail.com</li>
+          <li>Phone: +13439897788</li>
         </ul>
       </div>
     </section>
