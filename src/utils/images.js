@@ -7,10 +7,13 @@ function importAll(r) {
   return images;
 }
 
-// Import all images from assets folder
+// Import all images from assets folder - only import what exists
 const imageModules = importAll(
   require.context('../assets', false, /\.(png|jpe?g|svg)$/)
 );
+
+// Debug: Log what files are actually found
+console.log('Found image files:', Object.keys(imageModules));
 
 // Convert to array and generate metadata
 const generateImageData = () => {
@@ -53,14 +56,4 @@ export const getTotalImages = () => {
   return GALLERY_IMAGES.length;
 };
 
-// Export individual images for carousel (maintaining current functionality)
-// This creates named exports for backward compatibility
-const imageExports = {};
-GALLERY_IMAGES.forEach((image, index) => {
-  imageExports[`IMG${index + 1}`] = image.src;
-});
-
-export const {
-  IMG1, IMG2, IMG3, IMG4, IMG5, IMG6, IMG7, IMG8, IMG9,
-  IMG10, IMG11, IMG12, IMG13, IMG14, IMG15, IMG16, IMG17, IMG18, IMG19
-} = imageExports;
+// No longer exporting individual IMG variables to avoid webpack warnings
