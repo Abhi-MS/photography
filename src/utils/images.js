@@ -12,9 +12,6 @@ const imageModules = importAll(
   require.context('../assets', false, /\.(png|jpe?g|svg)$/)
 );
 
-// Debug: Log what files are actually found
-console.log('Found image files:', Object.keys(imageModules));
-
 // Convert to array and generate metadata
 const generateImageData = () => {
   const imageFiles = Object.keys(imageModules).sort(); // Sort for consistent order
