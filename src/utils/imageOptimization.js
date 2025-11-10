@@ -7,12 +7,6 @@
  * @returns {object} - Srcset and sizes for responsive images
  */
 export const generateResponsiveImageData = (src, baseWidth = 400) => {
-  const sizes = [
-    { width: Math.round(baseWidth * 0.5), density: '1x' },
-    { width: baseWidth, density: '2x' },
-    { width: Math.round(baseWidth * 1.5), density: '3x' }
-  ];
-
   // For now, return the original src since we don't have a server-side resize service
   // In production, you'd want to use a service like Cloudinary, ImageKit, or generate multiple sizes
   return {

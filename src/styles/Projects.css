@@ -1,39 +1,64 @@
 .gallery-container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-between;
-    width: 100%;
-    padding: 4rem;
-  }
-  
-  .text-container {
-    flex: 1;
-    justify-self: center;
-    margin-left: 3rem;
-  }
-   
-  #projects h2{
-    color: aliceblue;
-  }
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  padding: 4rem 2rem;
+  max-width: 1400px;
+}
+
+.text-container {
+  flex: 1;
+  justify-self: center;
+  margin-left: 3rem;
+  margin-bottom: 3rem;
+}
+
+.text-container h2 {
+  color: #f8f9fa !important;
+  font-size: 3rem !important;
+  font-weight: 300 !important;
+  letter-spacing: 3px !important;
+  text-align: center !important;
+  margin: 0 !important;
+  position: relative !important;
+}
+
+.text-container h2::after {
+  content: '';
+  position: absolute;
+  bottom: -10px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 60px;
+  height: 2px;
+  background: linear-gradient(90deg, transparent, #fff, transparent);
+}
   
   
 
 .gallery {
-    --s: 220px;
-    --g: 10px;  
-    --f: 2;
-    
-    flex: 1; 
-    justify-self: flex-end;
-    display: grid;
-    gap: var(--g);
-    width: calc(3*var(--s) + 2*var(--g));
-    aspect-ratio: 1;
-    max-width: 50%;
-    grid-template-columns: repeat(3,auto);
-    margin: 3rem;
-  }
+  --s: 220px;
+  --g: 12px;  
+  --f: 2;
+  
+  flex: 1; 
+  justify-self: flex-end;
+  display: grid;
+  gap: var(--g);
+  width: calc(3*var(--s) + 2*var(--g));
+  aspect-ratio: 1;
+  max-width: 90%;
+  grid-template-columns: repeat(3,auto);
+  margin: 2rem;
+  padding: 1rem;
+  border-radius: 12px;
+  background: rgba(255, 255, 255, 0.02);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
+}
   
 .gallery > img,
 .gallery > .lazy-image-container {
@@ -42,11 +67,13 @@
   min-height: 100%;
   min-width: 100%;
   cursor: pointer;
-  filter: grayscale(80%) blur(0.5px) brightness(0.85);
-  transition: .35s linear;
-  will-change: filter, width, height;
-  transform: translateZ(0); /* Force GPU acceleration */
+  filter: grayscale(60%) blur(0.3px) brightness(0.9);
+  transition: all 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+  will-change: filter, width, height, transform;
+  transform: translateZ(0) scale(1);
   overflow: hidden;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
 }
 
 .gallery > .lazy-image-container img,
@@ -55,6 +82,7 @@
   height: 100%;
   object-fit: cover;
   display: block;
+  transition: transform 0.4s ease;
 }
 
 .gallery img:hover,
@@ -62,31 +90,55 @@
   filter: grayscale(0) blur(0px) brightness(1);
   width:  calc(var(--s)*var(--f));
   height: calc(var(--s)*var(--f));
-}  @media screen and (max-width: 768px) {
-    .gallery-container {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      width: 100%;
-      justify-content: center;
-      margin: auto;
-      padding: 0px;
-    }
-    .gallery{
-      margin: 0px;
-      margin-top: 2rem;
-      max-width: 100%;
-      grid-template-columns: repeat(3,auto);
-      gap: 0;
-    }
+  transform: translateZ(0) scale(1.02);
+  box-shadow: 0 12px 32px rgba(0, 0, 0, 0.6);
+  z-index: 10;
+  position: relative;
+}
 
-    .gallery img:hover,
-    .gallery .lazy-image-container:hover {
-      width:  100%;
-    }
-    #projects{
-      height: 100vh;
-      align-items: center;
+.gallery .lazy-image-container:hover img {
+  transform: scale(1.05);
+}  @media screen and (max-width: 768px) {
+  .gallery-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    justify-content: center;
+    margin: auto;
+    padding: 1rem;
   }
   
+  .text-container {
+    margin: 0 0 2rem 0;
   }
+  
+  .text-container h2 {
+    font-size: 2.2rem !important;
+    letter-spacing: 2px !important;
+  }
+  
+  .gallery{
+    margin: 0px;
+    margin-top: 1rem;
+    max-width: 100%;
+    width: calc(3*180px + 2*8px);
+    --s: 180px;
+    --g: 8px;
+    grid-template-columns: repeat(3,auto);
+    gap: var(--g);
+    padding: 0.5rem;
+  }
+
+  .gallery img:hover,
+  .gallery .lazy-image-container:hover {
+    width: 100%;
+    height: 100%;
+    transform: translateZ(0) scale(1);
+  }
+  
+  #projects{
+    height: 100vh;
+    align-items: center;
+  }
+}

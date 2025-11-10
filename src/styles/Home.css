@@ -1,25 +1,68 @@
 #home{
   display: grid;
   justify-content: right;
+  position: relative;
+  height: 100vh;
+  overflow: hidden;
 }
+
+#home::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(45deg, rgba(0,0,0,0.2) 0%, rgba(0,0,0,0.05) 50%, rgba(0,0,0,0.2) 100%);
+  pointer-events: none;
+  z-index: 1;
+}
+
+/* Add a subtle top gradient to blend with the transparent navbar */
+#home::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 120px;
+  background: linear-gradient(to bottom, rgba(0,0,0,0.4) 0%, rgba(0,0,0,0.2) 50%, transparent 100%);
+  pointer-events: none;
+  z-index: 2;
+}
+
 .slides{
-    margin: 0px;
-    padding: 0px;
+  margin: 0px;
+  padding: 0px;
+  position: relative;
+  z-index: 0;
 }
+
 .slide{
   width: 80vw;
+  position: relative;
 }
+
 .hidebuttons{
-    opacity: 30% !important;
+  opacity: 20% !important;
+  transition: opacity 0.3s ease !important;
+}
+
+.hidebuttons:hover {
+  opacity: 60% !important;
 }
 
 .carousel-item {
-  transition-duration: 1.5s; 
-  transition-timing-function: ease-in-out;
+  transition-duration: 1.8s; 
+  transition-timing-function: cubic-bezier(0.25, 0.46, 0.45, 0.94);
 }
+
 .img-size{
   height: 100vh;
   margin: auto;
+  object-fit: cover;
+  filter: brightness(0.95) contrast(1.05);
+  transition: filter 0.3s ease;
 }
 
 @media (max-width: 768px) {
